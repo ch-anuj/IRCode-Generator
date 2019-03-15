@@ -1,0 +1,16 @@
+main:
+int a
+
+a = 100
+L0:
+
+if (1 neq 1) goto L1
+
+
+t0 = a - 1
+a = t0
+print a
+goto L0
+L1:
+
+return 0  zrim vs jhanjarrim vs jhanjar

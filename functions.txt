@@ -1,0 +1,68 @@
+int lookupGst(char* fooName,gst* headGst){
+
+void insert_gst(char* fooName,gst** tailGst,gst** headGst){
+
+int lookupLst(char* varName,lst* headLst){
+
+void insert_lst(char* varName,lst** tailLst,lst** headLst){
+
+void printGst(gst* headA){
+
+void printLst(lst* headA){
+
+int setPtrGst(char* fooName,gst* headGst){
+
+int setPtrLst(char* varName){
+
+void printAllTables(gst* headGst){
+
+void printGraph(A* headA){
+
+int addNodeA(int id,char* label,A** tailA,A** headA){
+
+void addNodeC(char* label,C** tailC,C** headC){
+
+void flush(C** headC){
+
+int findNode(int id,A* headA){
+
+void makeChild(int parent,int child,A* headA){
+
+void printlistC(C* headC){
+
+typedef struct A{
+  char label[25];
+  int id;
+  struct A *next;
+  struct B *right;
+}A;
+typedef struct B
+{
+  int id;
+  struct B *next;
+}B;
+typedef struct C
+{
+  char varName[25];
+  struct C *next; 
+}C;
+typedef struct parameters
+{
+  int type;
+  struct parameters *next;
+}parameters;
+typedef struct lst
+{
+  char var_name[25];
+  char type[7];
+  struct lst * next;
+}lst;
+typedef struct gst{
+  char f_name[25];
+  struct lst* f_tableHead;
+  struct lst* f_tableTail;
+  char ret_type[7];
+  struct gst* next;
+  int nParam;
+  parameters* p_list;
+}gst;
